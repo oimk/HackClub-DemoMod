@@ -3,6 +3,7 @@ package com.aidenj.playerevolutions.util;
 import com.aidenj.playerevolutions.blocks.BlockItemBase;
 import com.aidenj.playerevolutions.blocks.RubyBlock;
 
+
 import com.yourusername.PlayerEvolutions;
 import com.aidenj.playerevolutions.items.ItemBase;
 import net.minecraft.block.Block;
@@ -23,4 +24,6 @@ public class RegistryHandler {
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
+    public static final RegistryObject<Item> BlACK_DIAMOND = ITEMS.register("black_diamond", ItemBase::new);
+
 }
